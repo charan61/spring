@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo clone & clean') {
             steps {
-              bat "rmdir  /s /q spring"
+            //  bat "rmdir  /s /q spring"
                 bat "git clone https://github.com/charan61/spring.git"
                 bat "mvn clean -f spring"
             }
